@@ -13,11 +13,11 @@ openssl req -x509 -sha384 -nodes -days 365 -subj '/CN=localhost' -key server.key
 ### Create RSA self-signed certificate
 ```
 2048:
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out cert.crt
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt
 3072:
-openssl req -x509 -nodes -days 365 -newkey rsa:3072 -keyout server.key -out cert.crt
+openssl req -x509 -nodes -days 365 -newkey rsa:3072 -keyout server.key -out server.crt
 4096:
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout server.key -out cert.crt
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout server.key -out server.crt
 ```
 
 ### View certificate
